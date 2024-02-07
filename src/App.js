@@ -1,23 +1,9 @@
-import { useState,useEffect } from "react";
-import "./App.css";
 
+import "./App.css";
+import ProductPreview from './productpreview'
 import Product from "./productData";
 function App() {
-  const [currentTime, setCurrentTime] = useState(new Date());
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000); 
-
-    return () => clearInterval(intervalId);
-  }, []);
-
-  const hours = currentTime.getHours() > 9 ? new Date().getHours():'0' +new Date();
-  const minutes = currentTime.getMinutes()  > 9 ? new Date().getMinutes():'0' +new Date() ;
-
- 
- 
+  
   return (
     <div className="App">
       <header>
@@ -32,11 +18,8 @@ function App() {
       </header>
 
       <div className="maincontainer">
-        <div className="product_preview">
-          <img src="https://imgur.com/iOeUBV7.png" alt="productPreview" />
-        <div className="time">
-        <p>{`${hours}:${minutes}`}</p></div>
-        </div>
+       <ProductPreview/>
+       
         <div className="product_data">
           <h2 className="product_title">{Product.title}</h2>
           <p className="product_description">{Product.description}</p>
@@ -69,8 +52,8 @@ function App() {
           <button className="buy">Buy Now</button>
           </div>
         </div>
-      </div>
-    </div>
+     </div>
+   </div>
   );
 }
 
