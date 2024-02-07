@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+nav{
+  background: rgb(212 83 83);
+color: white;
+text-align: center;
+margin: 0;
+padding: 4px;
+position: fixed;
+width: 100%;
+left: 0;
+top: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header_img{
+  margin: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.maincontainer{
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  margin-top: 3rem;
+align-items: center;
+  padding: 7% 0%;
+}
+
+.product_preview {
+  width: 40%;
+position: relative;
+}
+.time{
+  font-weight: 900;
+  font-size: 3rem;
   color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+}
+.product_data{
+  width: 40%;
+  
+}
+.product_preview img{
+  width:100%;
+
+}
+.product_title ,.product_description{
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+.productfilter_img{
+  width: 100%;
+  max-width: 80px;
+  /* border: 2px solid teal; */
+  border-radius: 8px;
+  margin-right:  1em;
+  cursor: pointer;
+}
+.productfilter{
+  display: flex;
+  flex-wrap: wrap;
+}
+.selectImg{
+  border: 2px solid teal;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.butitem>.buy {
+  color: white;
+  background-color:teal;
+  max-width: 80px;
+margin-top: 2em;
+border-radius: 5px;
+  border: 0;
+  padding: 12px 25px;
+  text-align: center;
+cursor: pointer;
+font-weight: 600;
+box-sizing: content-box;
 }
