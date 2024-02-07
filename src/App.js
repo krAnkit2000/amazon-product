@@ -4,7 +4,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-   <h1>amazon</h1>
+  <header>
+  <nav>
+  
+  </nav>
+  </header>
     </div>
   );
 }
