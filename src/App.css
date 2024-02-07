@@ -30,15 +30,21 @@ position: relative;
 }
 .time{
   font-weight: 900;
-  font-size: 3rem;
+
   color: white;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50% , -50%);
 }
+
+.time p{
+  font-size: 29px;
+}
+
+
 .product_data{
-  width: 40%;
+  width: 60%;
   
 }
 .product_preview img{
